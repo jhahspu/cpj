@@ -14,7 +14,6 @@ IF "%1" == "" (
 )
 ```
 
-
 ### Powershell
 
 - Enable Windows Developer mode from Settings -> Update & Security
@@ -36,7 +35,6 @@ Get-Alias -Name cpj
 New-Alias -Name cpj -Value \path-to-bat-file\createProject.bat
 ```
 
-
 ## Python
 
 - With **sys** library we can read the passed paramateres
@@ -51,6 +49,12 @@ else:
 // ToDo:
 // Define a function to handle each case
 // Also we could implement multiple types of projects
-// For example we could say "cpj folder_name html  l" to create an HTML project, etc..
+// For example we could say "cpj folder_name html l" to create an HTML project, etc..
 ```
 
+## The command
+
+```powershell
+cpj project_name html l
+```
+- This will create a local html project 
