@@ -54,9 +54,9 @@ ToDo: Function to handle arguments
 ## The command
 
 ```powershell
-cpj project_name project_type l
+cpj folder_name project_type l
 ```
 - arg[0] - **cpj** - is the name we chose for this task
-- arg[1] - **project_name** - will create folder wherever the bat file is stored
+- arg[1] - **folder_name** - will create folder wherever the bat file is stored
 - arg[2] - **project_type** - for example 'html'
 - arg[3] - **l** - (L) local project // if ommited should also create and set github origin 
