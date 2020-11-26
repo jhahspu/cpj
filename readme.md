@@ -8,15 +8,15 @@
 - Register __**alias_name**__ in powershell, ex: __cpj__ that will also point to a **batch** file that will handle the rest
 - Make sure to have the batch file created
 ```powershell
-# Check Alias
+// Check Alias
 Get-Alias -Name cpj
 
-# Create a Powershell profile
+// Create a Powershell profile
 new-item -type file -force $profile
 
-# Open Powershell profile created in /USER_NAME/WindowsPowerShell/*.ps1
-# AND
-# Register ALIAS_NAME that will also point to a BATCH file to handle the rest -> Save
+// Open Powershell profile created in /USER_NAME/WindowsPowerShell/*.ps1
+// AND
+// Register ALIAS_NAME that will also point to a BATCH file to handle the rest -> Save
 New-Alias -Name cpj -Value \path-to-bat-file\createProject.bat
 ```
 
