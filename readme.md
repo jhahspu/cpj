@@ -2,7 +2,8 @@
 
 ### Batch
 - This will read the parameters after the command we'll create for PowerShell
-- So create this basic file, and we'll update it afterwards
+- So create this basic batch file, and we'll update it afterwards
+- Named it __createProject.bat__ & saved it in my Projects folder
 ```powershell
 @ECHO OFF
 CD /d %~dp0
@@ -32,12 +33,13 @@ Get-Alias -Name cpj
 - $Profile file is in /USER_NAME/Documents/WindowsPowerShell/*.ps1
 - This should also point to the previously created **batch** file
 ```powershell
-New-Alias -Name cpj -Value \path-to-bat-file\createProject.bat
+New-Alias -Name cpj -Value \path\to\bat\file\createProject.bat
 ```
 
 ## Python
 
 - With **sys** library we can read the passed paramateres
+- Named it __createProject.py__ and saved it in my Projects folder
 ```python
 import sys
 
@@ -46,7 +48,7 @@ if (len(sys.argv) > 3):
 else:
     print('creating remote project: ' + str(sys.argv[1]) + ' ' + str(sys.argv[2]))
 
-ToDo: Define function to handle arguments
+ToDo: Function to handle arguments
 ```
 
 ## The command
