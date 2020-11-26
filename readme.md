@@ -13,12 +13,12 @@ IF "%1" == "" (
   )
 )
 ```
-- Example file in project
+
 
 ### Powershell
 
-- Enable Developer mode from Settings -> Update & Security
-- Create a Powershell profile and Edit
+- Enable Windows Developer mode from Settings -> Update & Security
+- Create a Powershell profile
 ```powershell
 new-item -type file -force $profile
 ```
@@ -35,15 +35,20 @@ Get-Alias -Name cpj
 ```powershell
 New-Alias -Name cpj -Value \path-to-bat-file\createProject.bat
 ```
-- Example files in project
+
 
 ## Python
 
 - With **sys** library we can read the passed paramateres
 ```python
+import sys
+
 if (len(sys.argv) > 2):
     print('creating local project: ' + str(sys.argv[1]) + ' ' + str(sys.argv[2]))
 else:
     print('creating remote project: ' + str(sys.argv[1]))
+
+// ToDo:
+// define a function to handle each case
 ```
-- Example file in project
+
