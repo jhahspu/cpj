@@ -7,7 +7,7 @@
 @ECHO OFF
 CD /d %~dp0
 IF "%1" == "" (
-  ECHO "error, should be 'cpj folder_name l(optional for local-only project)'"
+  ECHO "error, should be 'cpj folder_name project_type l (where l is optional for local-only project)'"
 ) ELSE (
     py createProject.py %*%
   )
@@ -46,8 +46,7 @@ if (len(sys.argv) > 3):
 else:
     print('creating remote project: ' + str(sys.argv[1]) + ' ' + str(sys.argv[2]))
 
-// ToDo:
-// Define function to handle arguments
+ToDo: Define function to handle arguments
 ```
 
 ## The command
@@ -55,7 +54,7 @@ else:
 ```powershell
 cpj project_name html l
 ```
-- arg[0] **cpj** - is the name we chose for this task
-- arg[1] **project_name** - will create folder wherever the bat file is stored
-- arg[2] **html** - type of project
-- arg[3] **l** - local project // if ommited should also push to github
+- arg[0] - **cpj** - is the name we chose for this task
+- arg[1] - **project_name** - will create folder wherever the bat file is stored
+- arg[2] - **html** - type of project
+- arg[3] - **l** - (L) local project // if ommited should also create and set github origin 
