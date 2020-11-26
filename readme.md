@@ -47,9 +47,12 @@ else:
     print('creating remote project: ' + str(sys.argv[1]) + ' ' + str(sys.argv[2]))
 
 // ToDo:
-// Define a function to handle each case
+// Define function to handle arguments
 // Also we could implement multiple types of projects
-// For example we could say "cpj folder_name html l" to create an HTML project, etc..
+// For example "cpj folder_name html l"
+// where
+//    arg[0] cpj - run cmd
+//    arg[1] folder_name - create folder 
 ```
 
 ## The command
@@ -57,4 +60,7 @@ else:
 ```powershell
 cpj project_name html l
 ```
-- This will create a local html project 
+- arg[0] **cpj** - is the name we chose for this task
+- arg[1] **project_name** - will create folder wherever the bat file is stored
+- arg[2] **html** - type of project
+- arg[3] **l** - local project // if ommited should also push to github
