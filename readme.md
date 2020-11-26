@@ -1,16 +1,28 @@
 ## Automate project setup steps with Python, Powershell and Batch
 
 ### Powershell
-- Check/Register __**alias_name**__ in powershell.
+- Enable Developer mode from Settings -> Update & Security
+- Create a Powershell profile
+- Check __**alias_name**__ in powershell and make sure it's not a duplicate
 - If **Get-Alias** returns error than __**alias_name**__ is **unused**
-- It will also point to a **batch** file that will handle the Python scripts
+- Register __**alias_name**__ in powershell, ex: __cpj__ that will also point to a **batch** file that will handle the rest
+- Make sure to have the batch file created
 ```powershell
+# Check Alias
 Get-Alias -Name cpj
-Set-Alias -Name cpj -Value \path-to-bat-file\createProject.bat
+
+# Create a Powershell profile
+new-item -type file -force $profile
+
+# Open Powershell profile created in /USER_NAME/WindowsPowerShell/*.ps1
+# AND
+# Register ALIAS_NAME that will also point to a BATCH file to handle the rest -> Save
+New-Alias -Name cpj -Value \path-to-bat-file\createProject.bat
 ```
 
 ### Batch
-- Read parameters after __**alias_name**__, **dir_name** and **l** (optional for local-only project)
+- Read parameters after __**alias_name**__, **dir_name** and **l**
+- __L__ will be optional for local-only project)
 ```powershell
 @echo off
 set dn = %1
