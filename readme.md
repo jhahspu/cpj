@@ -57,6 +57,6 @@ ToDo: Function to handle arguments
 cpj folder_name project_type l
 ```
 - arg[0] - **cpj** - is the name we chose for this task
-- arg[1] - **folder_name** - will create folder wherever the bat file is stored
+- arg[1] - **folder_name** - name of project and folder
 - arg[2] - **project_type** - for example 'html'
-- arg[3] - **l** - (L) local project // if ommited should also create and set github origin 
+- arg[3] - **l** - (L - optional) for local only project // if ommited should create repo and set origin main
