@@ -1,0 +1,45 @@
+$main-0: hsla(0, 0, 2%, 1);
+$main-1: hsla(0, 0, 12%, 1);
+$main-2: hsla(0, 0, 22%, 1);
+$main-3: hsla(0, 0, 32%, 1);
+$main-4: hsla(0, 0, 42%, 1);
+$main-5: hsla(0, 0, 52%, 1);
+$main-6: hsla(0, 0, 62%, 1);
+$main-7: hsla(0, 0, 72%, 1);
+$main-8: hsla(0, 0, 82%, 1);
+$main-9: hsla(0, 0, 92%, 1);
+$acc: #04a2e4;
+ 
+$text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+@mixin container {
+	width: 87%;
+	max-width: 1024px;
+	margin: 0 auto;
+	@media ( max-width: 45rem) {
+		width: 90%;
+	}
+}
+
+@mixin btn {
+	background-color: $acc; 
+	padding: 0.3rem 0.8rem; 
+	border-radius: 4px; 
+	transition: filter 0.2s ease-in-out; 
+	&:hover {
+		filter: brightness(0.86); 
+	}
+} 
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	background-color: $main-1;
+	color: $main-9;
+	font-size: 18px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
