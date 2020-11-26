@@ -48,11 +48,6 @@ else:
 
 // ToDo:
 // Define function to handle arguments
-// Also we could implement multiple types of projects
-// For example "cpj folder_name html l"
-// where
-//    arg[0] cpj - run cmd
-//    arg[1] folder_name - create folder 
 ```
 
 ## The command
