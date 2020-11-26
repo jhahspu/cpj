@@ -31,7 +31,7 @@ Get-Alias -Name cpj
 
 - Register __**alias_name**__ in the PowerShell $profile
 - $Profile file is in /USER_NAME/Documents/WindowsPowerShell/*.ps1
-- This will also point to a **batch** file that will handle the rest
+- This should also point to the previously created **batch** file
 ```powershell
 New-Alias -Name cpj -Value \path-to-bat-file\createProject.bat
 ```
@@ -43,14 +43,14 @@ New-Alias -Name cpj -Value \path-to-bat-file\createProject.bat
 ```python
 import sys
 
-if (len(sys.argv) > 2):
-    print('creating local project: ' + str(sys.argv[1]) + ' ' + str(sys.argv[2]))
+if (len(sys.argv) > 3):
+    print('creating local project: ' + str(sys.argv[1]) + ' ' + str(sys.argv[2]) + ' ' + str(sys.argv[3]))
 else:
-    print('creating remote project: ' + str(sys.argv[1]))
+    print('creating remote project: ' + str(sys.argv[1]) + ' ' + str(sys.argv[2]))
 
 // ToDo:
 // Define a function to handle each case
 // Also we could implement multiple types of projects
-// For example we could say "cpj folder_name  l html" to create an HTML project, etc..
+// For example we could say "cpj folder_name html  l" to create an HTML project, etc..
 ```
 
