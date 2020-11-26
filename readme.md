@@ -1,4 +1,4 @@
-## Automate project setup steps with Python, Powershell and Batch
+## Automate any project setup steps with Python, Powershell and Batch
 
 ### Batch
 - This will read the parameters after the command we'll create for PowerShell
@@ -49,6 +49,8 @@ else:
     print('creating remote project: ' + str(sys.argv[1]))
 
 // ToDo:
-// define a function to handle each case
+// Define a function to handle each case
+// Also we could implement multiple types of projects
+// For example we could say "cpj folder_name  l html" to create an HTML project, etc..
 ```
 
