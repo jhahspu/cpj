@@ -35,6 +35,7 @@ Get-Alias -Name cpj
 ```powershell
 New-Alias -Name cpj -Value \path\to\bat\file\createProject.bat
 ```
+- save the command in the **.ps1** profile
 
 ## Python
 
